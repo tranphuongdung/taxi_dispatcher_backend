@@ -1,0 +1,30 @@
+{
+  "name": "taxi_dispatcher_backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:quocthanh18tn/taxi_dispatcher_backend.git",
+  "author": "Thanh Phan <qthanh18tn@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.14.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "connect-redis": "^7.1.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.2",
+    "express-handlebars-paginate": "^1.0.3",
+    "express-session": "^1.17.3",
+    "express-validator": "^7.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "node-mailjet": "^6.0.4",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "pg": "^8.11.3",
+    "pg-hstore": "^2.3.4",
+    "redis": "^4.6.8",
+    "sequelize": "^6.33.0"
+  }
+}
