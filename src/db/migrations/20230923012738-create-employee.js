@@ -16,13 +16,20 @@ module.exports = {
         type: Sequelize.STRING,
       },
       phone: {
+        allowNull: false,
+        unique: true,
         type: Sequelize.STRING,
       },
       email: {
+        allowNull: false,
+        unique: true,
         type: Sequelize.STRING,
       },
       isAdmin: {
         type: Sequelize.BOOLEAN,
+      },
+      resetToken: {
+        type: Sequelize.STRING,
       },
       createdAt: {
         allowNull: false,

@@ -143,6 +143,18 @@ class BaseFinder {
       totalPage: Math.ceil(data.count / this.perPageBuilder()),
     };
   }
+
+  pageBuilder() {
+    let page = Number(this.params.page);
+
+    return isNaN(page) || page < 1 ? 1 : page;
+  }
+
+  perPageBuilder() {
+    let perPage = Number(this.params.perPage);
+
+    return isNaN(perPage) || perPage < 0 ? 15 : perPage;
+  }
 }
 
 exports.BaseFinder = BaseFinder;

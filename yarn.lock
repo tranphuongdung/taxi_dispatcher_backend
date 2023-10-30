@@ -4047,6 +4047,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"json-mask@npm:^1.0.4":
+  version: 1.0.4
+  resolution: "json-mask@npm:1.0.4"
+  bin:
+    json-mask: bin/json-mask.js
+  checksum: a1ec7d54d06b1321c8fb5aee5e18ca7a82ccb0240c75d641af83ca5d0d4dab244056bf3b15c30975804456cd495a2e6d497480a83c1249f41eafb6ec1b4eb4ff
+  languageName: node
+  linkType: hard
+
 "json-schema-traverse@npm:^0.4.1":
   version: 0.4.1
   resolution: "json-schema-traverse@npm:0.4.1"
@@ -5890,6 +5899,7 @@ __metadata:
     eslint-plugin-prettier: ^4.0.0
     express: ^4.17.1
     express-basic-auth: ^1.2.1
+    json-mask: ^1.0.4
     jsonwebtoken: ^8.5.1
     lodash: ^4.17.21
     moment: ^2.29.1

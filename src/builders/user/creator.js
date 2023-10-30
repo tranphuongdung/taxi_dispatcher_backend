@@ -24,7 +24,6 @@ module.exports = () => {
     }
 
     async prepareInstance() {
-      // console.log(this.models);
       this.instance = this.instance || this.models.build(this.permittedParams());
     }
 

@@ -16,9 +16,16 @@ module.exports = {
         type: Sequelize.STRING,
       },
       phone: {
+        allowNull: false,
+        unique: true,
         type: Sequelize.STRING,
       },
       email: {
+        allowNull: false,
+        unique: true,
+        type: Sequelize.STRING,
+      },
+      resetToken: {
         type: Sequelize.STRING,
       },
       createdAt: {
