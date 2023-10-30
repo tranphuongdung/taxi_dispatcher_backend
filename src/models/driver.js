@@ -19,6 +19,7 @@ module.exports = (sequelize, DataTypes) => {
   Driver.init(
     {
       name: DataTypes.STRING,
+      password: DataTypes.STRING,
       phone: DataTypes.STRING,
       email: DataTypes.STRING,
     },

@@ -7,18 +7,13 @@ const cors = require('cors');
 
 const port = process.env.PORT || 5001;
 const app = express();
-const router = require('./router');
 
 // cau hinh doc du lieu post tu body
 app.use(express.json());
 app.use(express.urlencoded({ extends: false }));
 app.use(cors());
 app.use(bodyParser.json());
-app.use('/', router);
-
-app.use((error, req, res, next) => {
-  console.log(error);
-});
+app.use('/', require('./routes/indexRouter'));
 
 // start
 app.listen(port, () => {
