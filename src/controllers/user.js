@@ -37,4 +37,20 @@ router.post('/reset-password', async (req, res) => {
     .catch((error) => exceptionHandler.error(req, res, error));
 });
 
+/* Register a new trip */
+router.post('/register-trip', (req, res) => {
+  console.log('### please handle logic here');
+  console.log('### data: ', req.body);
+  let simulate = true;
+  if (simulate) {
+    services.user.RegisterTrip.call(req.body)
+      .then(() => {
+        res.json({ message: 'success' });
+      })
+      .catch((error) => exceptionHandler.error(req, res, error));
+  } else {
+    // when something fails
+    res.status(404).send('Not found');
+  }
+});
 module.exports = router;
